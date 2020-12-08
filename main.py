@@ -19,7 +19,7 @@ class GoogleKeywordScreenshooter:
         search_bar.send_keys(Keys.ENTER)
         try:
             shitty_element = WebDriverWait(self.browser, 10).until(
-                EC.presense_of_element_located(By.CLASS_NAME, "g-blk")
+                EC.presence_of_element_located(By.CLASS_NAME, "g-blk")
             )
             self.browser.execute_script(
                 """
